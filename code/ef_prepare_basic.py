@@ -13,7 +13,7 @@ import numpy as np
 import os
 import time
 
-root_dir = 'f:\\play-stock'
+root_dir = 'f:git-pro\\play-stock'
 code_dir = root_dir + '\\code'
 data_dir = root_dir + '\\data'
 model_dir = root_dir + '\\model'

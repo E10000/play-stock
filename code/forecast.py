@@ -17,14 +17,14 @@ import tushare as ts
 import datetime
 import sqlite3
 
-root_dir = 'f:\\play-stock'
+root_dir = 'f:\\git-pro\\play-stock'
 code_dir = root_dir + '\\code'
 data_dir = root_dir + '\\data'
 model_dir = root_dir + '\\model'
 temp_dir = root_dir + '\\temp'
 
-start = '20220703'
-end = '20220703'
+start = '20220706'
+end = '20220706'
 ts.set_token('7b571c7a6118274b004dbdddde8c48a8ed5a656803e441584c4a5053')
 pro = ts.pro_api()
 batch_size = 256

@@ -11,7 +11,13 @@ import tushare as ts
 import os
 import efinance as ef
 
-filename = 'newestforecast.csv'
+root_dir = 'f:git-pro\\play-stock'
+code_dir = root_dir + '\\code'
+data_dir = root_dir + '\\data'
+model_dir = root_dir + '\\model'
+temp_dir = root_dir + '\\temp'
+
+filename = temp_dir + 'newestforecast.csv'
 stocklist = []
 codelist = []
 stockno = 0
@@ -23,7 +29,7 @@ datelist = predict_stock.trade_date
 datelist = datelist.sort_values(ascending=False, inplace=False)
 datelist = datelist[~datelist.duplicated()].reset_index()
 
-os.chdir('d:\\python\\stock')
+# os.chdir('d:\\python\\stock')
 ts.set_token('7b571c7a6118274b004dbdddde8c48a8ed5a656803e441584c4a5053')
 pro = ts.pro_api()
 
